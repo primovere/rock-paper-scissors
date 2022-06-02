@@ -55,5 +55,15 @@ function game() {
       ++score;
     }
   }
-  console.log(`Score: ${score}`)
+  console.log(`Score: ${score}`);
+
+  if (score === 5) {
+    console.log("Are you kindding me? You are not only the winner but an absolute genius!")
+  } else if (score >= 3) {
+    console.log("Congratulations! You are the winner!");
+  } else if (score > 0) {
+    console.log('"You lose... Remember the phrase "Failure is the mother of success".');
+  } else {
+    console.log("You're so unlucky! Take a break!");
+  }
 }
