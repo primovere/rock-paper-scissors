@@ -17,7 +17,8 @@ function computerPlay() {
     } 
 }
 
-function playRound(playerSelection=a, computerSelection=computerPlay()) {
+function playRound(playerSelection, computerSelection=computerPlay()) {
+  playerSelection = prompt("Rock, Paper or Scissors?")
   if (playerSelection == "Rock") {
     if (computerSelection == "Rock") {
       return "Draw";
