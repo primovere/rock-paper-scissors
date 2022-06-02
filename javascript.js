@@ -67,3 +67,5 @@ function game() {
     console.log("You're so unlucky! Take a break!");
   }
 }
+
+game();
