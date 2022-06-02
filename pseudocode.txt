@@ -1,0 +1,35 @@
+Write a function called computerPlay, which randomly return …
+search random method
+Randomly assign a number between 0 ~ 2, each number represents rock... (use switch statement)
+
+
+Write a function that playRound, which takes 2 parameters: playerSelection and computerSelection. It returns a string declares the winner. (playerSelection is case-insensitive.
+Create playerSelection with prompt()
+Call computerPlay()
+Use if statement to check who the winner is and return the result
+makes the string comparison case-insensitive
+
+Write a function called game and call the playRound function inside of this one to play a 5 round game that keeps score and reports a winner or loser at the end.
+Use a for loop to repeat the following  5 times:
+ playRound()
+console.log(playRound())
+Check the content of console.log(playRound()), if the user wins, the score plus 1
+
+code which is not in for loop but included in game()
+return the final score and who the winner is
+Create a variable called score, and when the user wins, it adds 1
+console.log(`Score: ${score}`)
+
+Check if score is equal to 5 if yes console.log("Are you kidding me? You're an absolute genius.")
+if the user's score is equal or greater than 3
+If yes, alert("Congratulations! You are the winner!")
+If no, check if the score is equal to 0 
+If !== 0, alert('"You lose... Remember "Failure is the mother of success!"')
+If === 0, alert("You're so unlucky! Take a break!")
+
+
+Call game()
+
+
+
+
