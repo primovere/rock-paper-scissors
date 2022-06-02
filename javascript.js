@@ -1,10 +1,10 @@
 let num;
 
 function computerPlay() {
-  // ramdomly generate a number between 0 and 2 (both inclusive)
+  // generate a random integer between 0 and 2 (both inclusive)
   num = Math.floor(Math.random() * 3);
 
-  // each number returns a corresponding string
+  // each integer returns a corresponding string
   switch (num) {
     case 0:
       return "Rock";
