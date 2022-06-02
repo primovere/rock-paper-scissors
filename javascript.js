@@ -47,7 +47,13 @@ function playRound(playerSelection, computerSelection=computerPlay()) {
 }
 
 function game() {
+  let score = 0;
   for (let i = 0; i < 5; i++) {
-    console.log(playRound());
+    let singleRoundResult = playRound();
+    console.log(singleRoundResult);
+    if (singleRoundResult == "You Win!") {
+      ++score;
+    }
   }
+  console.log(`Score: ${score}`)
 }
