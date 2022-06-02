@@ -19,7 +19,7 @@ function computerPlay() {
 
 function playRound(playerSelection, computerSelection=computerPlay()) {
   playerSelection = prompt("Rock, Paper or Scissors?")
-  if (playerSelection == "Rock") {
+  if (playerSelection.localeCompare( "Rock", undefined, {sensitivity: "accent"} ) === 0) {
     if (computerSelection == "Rock") {
       return "Draw";
     } else if (computerSelection == "Paper") {
@@ -27,7 +27,7 @@ function playRound(playerSelection, computerSelection=computerPlay()) {
     } else if (computerSelection == "Scissors") {
       return "You Win!";
     }
-  } else if (playerSelection == "Paper") {
+  } else if (playerSelection.localeCompare( "Paper", undefined, {sensitivity: "accent"} ) === 0) {
     if (computerSelection == "Rock") {
       return "You Win!";
     } else if (computerSelection == "Paper") {
@@ -35,7 +35,7 @@ function playRound(playerSelection, computerSelection=computerPlay()) {
     } else if (computerSelection == "Scissors") {
       return "You Lose! Scissors beats Paper";
     }
-  } else if (playerSelection == "Scissors") {
+  } else if (playerSelection.localeCompare( "Scissors", undefined, {sensitivity: "accent"} ) === 0) {
     if (computerSelection == "Rock") {
       return "You Lose! Rock beats Scissors.";
     } else if (computerSelection == "Paper") {
@@ -44,5 +44,4 @@ function playRound(playerSelection, computerSelection=computerPlay()) {
       return "Draw";
     }
   }
-
 }
